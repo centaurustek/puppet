@@ -6,7 +6,7 @@ require => Package[‘httpd’],
 }
 service { “httpd”:
 ensure => running,
-enable => true,
+enable => false,
 }
 package { “httpd”:
 ensure => present
