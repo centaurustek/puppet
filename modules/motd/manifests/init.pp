@@ -4,3 +4,4 @@ class motd {
     source => ‘puppet:///modules/motd/motd’,
   } 
 }
+#hello
