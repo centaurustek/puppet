@@ -11,3 +11,11 @@ service_ensure => "running",
 service_enable => "true",
 }
 }
+testhttpd::vhost {"centaurus":
+port => "443",
+document_root => "/var/www/websites",
+servername => "abc.localdomain",
+vhost_dir => "/etc/httpd/conf.d",
+log_dir => "/var/log/httpd",
+}
+}
