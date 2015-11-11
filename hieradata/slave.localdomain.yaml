@@ -1,0 +1,8 @@
+---
+httpd::vhosts:
+  foo.example.com:
+     source: puppet:///modules/profilecdv/httpd/conf/logrotate
+  bar.example.com:
+     docroot: /var/www/bar.example.com
+     source: puppet:///modules/profilecdv/httpd/conf/log
+ 
