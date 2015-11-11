@@ -1,0 +1,15 @@
+---
+redhat_service: running
+package_redhat: httpd
+port: 9900000
+document_root: /var/www/websites
+servername: abc.localdomain
+vhost_dir: /etc/httpd/conf.d
+#log_dir: /var/log/httpd
+name_file: /etc/abcxyz.txt
+ensure: file
+owner: root
+group: root
+content: root
+htdocsource: puppet:///modules/profilecdv/httpd/conf/log
+             puppet:///modules/profilecdv/httpd/conf/logrotate
